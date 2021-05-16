@@ -1,4 +1,4 @@
-# React Zingmp3
+# React Typescript Zingmp3
 
 A simple React zing mp3 apps built with React Typescript, Redux and TailwindCSS.
 

@@ -22,8 +22,24 @@ const people = [
 
 function App() {
   return (
-    <div className="container min-w-full ">
-      <div className="btn">test</div>
+    <div className="container screen min-w-full">
+      <aside className="w-64 h-screen">
+        <img className="inline-block w-32 h-10" src="assets/images/logo-dark.svg" alt="Zing MP3" />
+        <nav>
+          <ul>
+            <li>
+              <a title="Cá Nhân">
+                <i className="fas fa-font-awesome" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+
+      </main>
+
+
 
       <ul className="divide-y divide-gray-200">
         {people.map((person) => (
