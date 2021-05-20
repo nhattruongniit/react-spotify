@@ -1,0 +1,81 @@
+[class*=" ic-"]:before,
+[class^="ic-"]:before,
+[data-icon]:before {
+  font-family: "mp3-zing" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-feature-settings: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @apply w-6;
+  @apply h-6;
+  @apply rounded-3xl;
+  @apply inline-block;
+  @apply mr-2.5;
+  @apply text-2xl;
+
+  color: var(--text-primary);
+}
+
+.icon--xlarge {
+  @apply text-xl;
+}
+
+.ic-library:before {
+  content: "\e019";
+}
+
+.ic-mn-home:before {
+  content: "\e017";
+}
+
+.ic-mn-zingchart:before {
+  content: "\e015";
+}
+
+.ic-feed:before {
+  content: "\e018";
+}
+
+.ic-mn-song:before {
+  content: "\3e";
+}
+
+.ic-mn-catalogue:before {
+  content: "\e013";
+}
+
+.ic-mn-top100:before {
+  content: "\e014";
+}
+
+.ic-mn-mv:before {
+  content: "\4f";
+}
+
+.ic-back:before {
+  content: "\25";
+}
+
+.ic-forward:before {
+  content: "\22";
+}
+
+.ic-search:before {
+  content: "\e000";
+}
+
+.ic-upload:before {
+  content: "\21";
+}
+
+.ic-settings:before {
+  content: "\e001";
+}
