@@ -37,6 +37,10 @@ main {
   width: calc(100% - theme("spacing.60"));
 }
 
+button {
+  outline: 0;
+}
+
 a:hover {
   color: var(--link-text-hover);
 }
@@ -269,3 +273,64 @@ a:hover {
 }
 
 /* end card */
+
+/* start sliders */
+.sliders__container {
+  @apply relative;
+
+  height: 100%;
+}
+
+.sliders__control {
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply absolute;
+  @apply rounded-full;
+  @apply w-14;
+  @apply h-14;
+
+  @apply text-white;
+  background-color: hsla(0, 0%, 100%, 0.15);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 15%);
+  transform: translateY(-50%);
+}
+
+.sliders__control--next {
+  @apply top-2/4;
+  @apply right-5;
+  @apply opacity-0;
+}
+
+.sliders__control--prev {
+  @apply top-2/4;
+  @apply left-5;
+  @apply opacity-0;
+}
+
+.sliders__prev {
+  @apply absolute;
+  @apply w-6/12;
+  @apply h-full;
+  @apply cursor-pointer;
+  @apply z-10;
+  @apply left-0;
+}
+
+.sliders__next {
+  @apply absolute;
+  @apply w-6/12;
+  @apply h-full;
+  @apply cursor-pointer;
+  @apply z-10;
+  @apply right-0;
+}
+
+.sliders__prev:hover button {
+  opacity: 1;
+}
+
+.sliders__next:hover button {
+  opacity: 1;
+}
+/* end sliders */

@@ -22,6 +22,7 @@ module.exports = {
       ...theme('colors'),
       'primary': 'var(--text-primary)',
       'secondary': 'var(--text-secondary)',
+      'white': 'var(--white)'
     }),
     outline: {
       'none': 'none'

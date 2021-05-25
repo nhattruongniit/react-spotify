@@ -1,3 +1,7 @@
+
+// components
+import Sliders from 'components/molecules/Silders';
+
 function App() {
   return (
     <div className="container">
@@ -10,50 +14,50 @@ function App() {
             <li>
               <a href="#title" title="Cá Nhân" className="sidebar__link">
                 <i className="icon ic-library" />
-                <span>Cá Nhân</span>
+                <span className="ml-2.5">Cá Nhân</span>
               </a>
             </li>
             <li className="is-active">
               <a href="#title" title="Khám Phá" className="sidebar__link">
                 <i className="icon ic-mn-home" />
-                <span>Khám Phá</span>
+                <span className="ml-2.5">Khám Phá</span>
               </a>
             </li>
             <li>
               <a href="#title" title="#zingchart" className="sidebar__link">
                 <i className="icon ic-mn-zingchart" />
-                <span>#zingchart</span>
+                <span className="ml-2.5">#zingchart</span>
               </a>
             </li>
             <li>
               <a href="#title" title="Theo Dõi" className="sidebar__link">
                 <i className="icon ic-feed" />
-                <span>Theo Dõi</span>
+                <span className="ml-2.5">Theo Dõi</span>
               </a>
             </li>
             <li className="my-4 sidebar__divide" />
             <li>
               <a href="#title" title="Nhạc mới" className="sidebar__link">
                 <i className="icon ic-mn-song" />
-                <span>Nhạc mới</span>
+                <span className="ml-2.5">Nhạc mới</span>
               </a>
             </li>
             <li>
               <a href="#title" title="Thể Loại" className="sidebar__link">
                 <i className="icon ic-mn-catalogue" />
-                <span>Thể Loại</span>
+                <span className="ml-2.5">Thể Loại</span>
               </a>
             </li>
             <li>
               <a href="#title" title="Top 100" className="sidebar__link">
                 <i className="icon ic-mn-top100" />
-                <span>Top 100</span>
+                <span className="ml-2.5">Top 100</span>
               </a>
             </li>
             <li>
               <a href="#title" title="MV" className="sidebar__link">
                 <i className="icon ic-mn-mv" />
-                <span>MV</span>
+                <span className="ml-2.5">MV</span>
               </a>
             </li>
           </ul>
@@ -91,6 +95,7 @@ function App() {
         <div className="mainpage">
           <div className="mainpage__container">
             <div className="mainpage__content">
+              <Sliders />
               <div className="channel">
                 <div className="title text-primary mb-2.5">Có Thể Bạn Sẽ Thích Đấy</div>
                 <div className="channel__carousel -mx-3.5">

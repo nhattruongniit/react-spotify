@@ -18,7 +18,6 @@
   @apply h-6;
   @apply rounded-3xl;
   @apply inline-block;
-  @apply mr-2.5;
   @apply text-2xl;
 
   color: var(--text-primary);
@@ -78,4 +77,12 @@
 
 .ic-settings:before {
   content: "\e001";
+}
+
+.ic-go-right:before {
+  content: "\41";
+}
+
+.ic-go-left:before {
+  content: "\7a";
 }
