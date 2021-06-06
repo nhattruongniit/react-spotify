@@ -370,14 +370,6 @@ a:hover {
   transform: translateX(77%) scale(0.85);
 }
 
-.sliders__item--last {
-  transform: translateX(20%) scale(0.85);
-}
-
-.sliders__item--first {
-  transform: translateX(-20%) scale(0.85);
-}
-
 .sliders__item--selected {
   @apply opacity-100;
   @apply z-2;

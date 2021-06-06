@@ -7,8 +7,7 @@ import sliders from './data.json';
 import SliderItem from './SliderItem';
 
 export default function Sliders() {
-  const [currIndex, setCurrIndex] = useState(0);
-  const slider = sliders[0];
+  const [currIndex, setCurrIndex] = useState(Math.floor(Math.random() * 6));
 
   function handlePrev() {
     if(currIndex > 0) {
@@ -34,10 +33,12 @@ export default function Sliders() {
         </div>
         {sliders.map((slide, index) => (
           <SliderItem 
-          key={slide.id} 
-          index={index}
-          currIndex={currIndex} 
-          slide={slide} />
+            key={slide.id} 
+            index={index}
+            slide={slide}
+            currIndex={currIndex} 
+            total={sliders.length}
+          />
         ))}
         <div className="sliders__next" onClick={handleNext}>
           <button type="button" className="sliders__control sliders__control--next"><i className="icon ic-go-right" /></button>
