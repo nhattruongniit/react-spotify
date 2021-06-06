@@ -11,7 +11,8 @@ module.exports = {
       ...theme('colors'),
       'sidebar': 'var(--sidebar-bg)',
       'alpha-bg': 'var(--alpha-bg)',
-      'layout-bg': 'var(--layout-bg)'
+      'layout-bg': 'var(--layout-bg)',
+      'loading-bg-animation': 'var(--loading-bg-animation)'
     }),
     borderColor: theme => ({
       ...theme('colors'),
@@ -24,6 +25,20 @@ module.exports = {
       'secondary': 'var(--text-secondary)',
       'white': 'var(--white)'
     }),
+    zIndex: {
+      '0': 0,
+      '1': 1,
+      '2': 2,
+      '10': 10,
+      '20': 20,
+      '30': 30,
+      '40': 40,
+      '50': 50,
+      '25': 25,
+      '75': 75,
+      '100': 100,
+      'auto': 'auto',
+    },
     outline: {
       'none': 'none'
     },

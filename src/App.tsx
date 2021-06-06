@@ -35,7 +35,7 @@ function App() {
                 <span className="ml-2.5">Theo Dõi</span>
               </a>
             </li>
-            <li className="my-4 sidebar__divide" />
+            <li className="my-4 sidebr__divide" />
             <li>
               <a href="#title" title="Nhạc mới" className="sidebar__link">
                 <i className="icon ic-mn-song" />

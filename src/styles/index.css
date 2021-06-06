@@ -157,8 +157,8 @@ a:hover {
 .topbar__search {
   @apply relative;
   @apply w-full;
-  @apply max-w-2xl;
   @apply h-10;
+  @apply max-w-2xl;
   @apply rounded-3xl;
   @apply flex;
   @apply items-center;
@@ -171,8 +171,8 @@ a:hover {
 
 .topbar__input {
   @apply w-full;
-  @apply bg-transparent;
   @apply h-8;
+  @apply bg-transparent;
   @apply -mt-1;
 
   @apply outline-none;
@@ -275,10 +275,17 @@ a:hover {
 /* end card */
 
 /* start sliders */
+.sliders {
+  margin-bottom: 50px;
+}
+
 .sliders__container {
   @apply relative;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
 
-  height: 100%;
+  height: calc(30vw - 149.5px);
 }
 
 .sliders__control {
@@ -326,11 +333,69 @@ a:hover {
   @apply right-0;
 }
 
-.sliders__prev:hover button {
-  opacity: 1;
+.sliders__prev:hover button,
+.sliders__next:hover button {
+  @apply opacity-100;
 }
 
-.sliders__next:hover button {
-  opacity: 1;
+.sliders__item {
+  @apply absolute;
+  @apply h-auto;
+  @apply z-0;
+  @apply opacity-0;
+  @apply rounded-lg;
+
+  @apply bg-loading-bg-animation;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    z-index 0s linear 0.25s;
 }
+
+.sliders__item figure {
+  @apply rounded-md;
+  @apply overflow-hidden;
+
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.sliders__item img {
+  transition: transform 0.7s;
+}
+
+.sliders__item--previous {
+  transform: translateX(-77%) scale(0.85);
+}
+
+.sliders__item--next {
+  transform: translateX(77%) scale(0.85);
+}
+
+.sliders__item--last {
+  transform: translateX(20%) scale(0.85);
+}
+
+.sliders__item--first {
+  transform: translateX(-20%) scale(0.85);
+}
+
+.sliders__item--selected {
+  @apply opacity-100;
+  @apply z-2;
+
+  transform: translateX(0);
+}
+
+.sliders__item--next,
+.sliders__item--previous {
+  @apply opacity-100;
+  @apply z-1;
+}
+
+.sliders__item-selected {
+  @apply opacity-100;
+  @apply z-1;
+
+  transform: translateX(0);
+}
+
 /* end sliders */
