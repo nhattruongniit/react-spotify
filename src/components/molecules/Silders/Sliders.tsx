@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 
 // data
 import sliders from './data.json';
@@ -9,26 +9,23 @@ import SliderItem from './SliderItem';
 export default function Sliders() {
   const [currIndex, setCurrIndex] = useState(Math.floor(Math.random() * 6));
 
-  function handlePrev() {
-    if(currIndex > 0) {
-      setCurrIndex(prevState => prevState - 1);
-    } else {
-      setCurrIndex(sliders.length - 1)
-    }
-  }
+  const handlePrevSlide = useCallback(() => {
+    setCurrIndex(prevCurrIndex => (prevCurrIndex - 1 + sliders.length) % sliders.length)
+  }, []);
 
-  function handleNext() {
-    if(currIndex < sliders.length - 1) {
-      setCurrIndex(prevState => prevState + 1);
-    } else {
-      setCurrIndex(0)
-    }
-  }
+  const handleNextSlide = useCallback(() => {
+    setCurrIndex(prevCurrIndex => (prevCurrIndex + 1) % sliders.length)
+  }, []);
+
+  useEffect(() => {
+    const timeout = setTimeout(handleNextSlide, 3000)
+    return () => clearTimeout(timeout)
+  })
 
   return (
     <div className="sliders">
       <div className="sliders__container">
-        <div className="sliders__prev" onClick={handlePrev}>
+        <div className="sliders__prev" onClick={handlePrevSlide}>
           <button type="button" className="sliders__control sliders__control--prev"><i className="icon ic-go-left" /></button>
         </div>
         {sliders.map((slide, index) => (
@@ -40,7 +37,7 @@ export default function Sliders() {
             total={sliders.length}
           />
         ))}
-        <div className="sliders__next" onClick={handleNext}>
+        <div className="sliders__next" onClick={handleNextSlide}>
           <button type="button" className="sliders__control sliders__control--next"><i className="icon ic-go-right" /></button>
         </div>
       </div>
