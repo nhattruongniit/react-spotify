@@ -10,11 +10,11 @@ export default function Sliders() {
   const [currIndex, setCurrIndex] = useState(Math.floor(Math.random() * 6));
 
   const handlePrevSlide = useCallback(() => {
-    setCurrIndex(prevCurrIndex => (prevCurrIndex - 1 + sliders.length) % sliders.length)
+    setCurrIndex((prevCurrIndex: number) => (prevCurrIndex - 1 + sliders.length) % sliders.length)
   }, []);
 
   const handleNextSlide = useCallback(() => {
-    setCurrIndex(prevCurrIndex => (prevCurrIndex + 1) % sliders.length)
+    setCurrIndex((prevCurrIndex: number) => (prevCurrIndex + 1) % sliders.length)
   }, []);
 
   useEffect(() => {
