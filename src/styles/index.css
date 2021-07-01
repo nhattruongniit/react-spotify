@@ -42,7 +42,7 @@ button {
 }
 
 a:hover {
-  color: var(--link-text-hover);
+  color: var(--white);
 }
 
 #root {
@@ -66,8 +66,7 @@ a:hover {
 
 .sidebar__logo {
   @apply inline-block;
-  @apply w-32;
-  @apply h-16;
+  @apply w-12;
 }
 
 .sidebar__nav {
@@ -131,7 +130,7 @@ a:hover {
   @apply left-60;
   @apply h-20;
   @apply px-8;
-  @apply bg-layout-bg;
+  @apply bg-topbar-bg;
   @apply z-10;
 }
 
@@ -164,6 +163,7 @@ a:hover {
   @apply items-center;
   @apply py-4;
   @apply px-3;
+  @apply ml-3;
 
   @apply bg-alpha-bg;
   color: var(--search-text);

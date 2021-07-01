@@ -12,6 +12,7 @@ module.exports = {
       'sidebar': 'var(--sidebar-bg)',
       'alpha-bg': 'var(--alpha-bg)',
       'layout-bg': 'var(--layout-bg)',
+      'topbar-bg': 'var(--topbar-bg)',
       'loading-bg-animation': 'var(--loading-bg-animation)'
     }),
     borderColor: theme => ({

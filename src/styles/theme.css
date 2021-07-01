@@ -1,7 +1,8 @@
 :root {
   --primary-bg: #282828;
-  --layout-bg: #1e1e1e;
-  --sidebar-bg: hsla(0, 0%, 100%, 0.05);
+  --layout-bg: #121212;
+  --topbar-bg: #040404;
+  --sidebar-bg: #000;
   --sidebar-popup-bg: #292929;
   --alpha-bg: hsla(0, 0%, 100%, 0.1);
   --banner-home-dot: #d8d8d8;
@@ -46,11 +47,12 @@
   --dark-alpha-50: rgba(0, 0, 0, 0.5);
   --dark-alpha-70: rgba(0, 0, 0, 0.7);
   --dark-alpha-80: rgba(0, 0, 0, 0.8);
+  --white: #fff;
 }
 
 [data-theme="purple"] {
   --primary-bg: #432275;
-  --layout-bg: #170f23;
+  --layout-bg: #121212;
   --sidebar-popup-bg: #2a213a;
   --alpha-layout-bg: rgba(41, 21, 71, 0.8);
   --queue-player-popup-bg: #120822;

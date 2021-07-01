@@ -6,8 +6,9 @@ function App() {
   return (
     <div className="container">
       <aside className="sidebar">
-        <div className="w-60 h-16 flex px-6 fixed -top-0">
-          <img className="sidebar__logo" src="assets/images/logo-dark.svg" alt="Zing MP3" />
+        <div className="w-60 h-16 px-6 fixed -top-0 flex items-center">
+          <img className="inline-block w-9" src="assets/images/logo.png" alt="Spotify" />
+          <h1 className="text-xl ml-2">Spotify</h1>
         </div>
         <nav className="sidebar__nav">
           <ul className="sidebar__list">
@@ -21,12 +22,6 @@ function App() {
               <a href="#title" title="Khám Phá" className="sidebar__link">
                 <i className="icon ic-mn-home" />
                 <span className="ml-2.5">Khám Phá</span>
-              </a>
-            </li>
-            <li>
-              <a href="#title" title="#zingchart" className="sidebar__link">
-                <i className="icon ic-mn-zingchart" />
-                <span className="ml-2.5">#zingchart</span>
               </a>
             </li>
             <li>
