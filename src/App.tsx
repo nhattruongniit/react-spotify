@@ -1,6 +1,5 @@
 
 // components
-import Sliders from 'components/molecules/Silders'
 import Player from 'components/molecules/Player'
 
 function App() {
@@ -20,14 +19,14 @@ function App() {
                   <span className="ml-2.5">Cá Nhân</span>
                 </a>
               </li>
-              <li className="is-active">
+              <li>
                 <a href="#title" title="Khám Phá" className="sidebar__link">
                   <i className="icon ic-mn-home" />
                   <span className="ml-2.5">Khám Phá</span>
                 </a>
               </li>
               <li className="my-4 sidebr__divide" />
-              <li>
+              <li className="is-active">
                 <a href="#title" title="Nhạc mới" className="sidebar__link">
                   <i className="icon ic-mn-song" />
                   <span className="ml-2.5">Nhạc mới</span>
@@ -68,7 +67,6 @@ function App() {
           <div className="mainpage">
             <div className="mainpage__container">
               <div className="mainpage__content">
-                <Sliders />
                 <div className="channel">
                   <div className="title text-primary mb-2.5">Có Thể Bạn Sẽ Thích Đấy</div>
                   <div className="channel__carousel -mx-3.5">

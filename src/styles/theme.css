@@ -4,6 +4,7 @@
   --topbar-bg: #040404;
   --sidebar-bg: #000;
   --sidebar-popup-bg: #292929;
+  --player-bg: #181818;
   --alpha-bg: hsla(0, 0%, 100%, 0.1);
   --banner-home-dot: #d8d8d8;
   --loading-bg: hsla(0, 0%, 100%, 0.1);
@@ -18,7 +19,6 @@
   --kara-lyrics-bg: #1e1e1e;
   --kara-btn-bg: hsla(0, 0%, 100%, 0.1);
   --theme-setting-active: hsla(0, 0%, 100%, 0.15);
-  --player-bg: rgba(0, 0, 0, 0.2);
   --progressbar-player-bg: hsla(0, 0%, 100%, 0.3);
   --progressbar-active-bg: #fff;
   --text-primary: #fff;
@@ -48,6 +48,8 @@
   --dark-alpha-70: rgba(0, 0, 0, 0.7);
   --dark-alpha-80: rgba(0, 0, 0, 0.8);
   --white: #fff;
+  --black: #000;
+  --fg-color: #b3b3b3;
 }
 
 [data-theme="purple"] {

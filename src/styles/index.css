@@ -52,6 +52,8 @@ a:hover {
 .container {
   @apply min-w-full;
   @apply flex;
+
+  height: calc(100vh - 96px);
 }
 
 /* start sidebar */
@@ -61,7 +63,7 @@ a:hover {
   @apply pt-16;
   @apply pb-14;
 
-  @apply bg-sidebar;
+  @apply bg-sidebar-bg;
 }
 
 .sidebar__logo {
@@ -124,14 +126,9 @@ a:hover {
   @apply flex;
   @apply items-center;
   @apply justify-items-center;
-  @apply fixed;
-  @apply top-0;
-  @apply right-0;
-  @apply left-60;
   @apply h-20;
   @apply px-8;
   @apply bg-topbar-bg;
-  @apply z-10;
 }
 
 .topbar__left {
@@ -220,8 +217,8 @@ a:hover {
 
 .mainpage__content {
   @apply relative;
-  @apply mt-20;
-  @apply mb-12;
+  @apply mt-6;
+  @apply mb-24;
 }
 /* end mainpage */
 
@@ -391,3 +388,53 @@ a:hover {
 }
 
 /* end sliders */
+
+/* start progress bar */
+.progressBar {
+  @apply w-full;
+  @apply h-4;
+  @apply cursor-pointer;
+  @apply flex;
+  @apply items-center;
+}
+
+.progressBar:hover .progressBar__bg {
+  @apply h-1;
+}
+
+.progressBar:hover .progressBar__dot::after {
+  @apply visible;
+}
+
+.progressBar__bg {
+  @apply w-full;
+  @apply h-1;
+  @apply relative;
+
+  @apply bg-alpha-bg;
+}
+
+.progressBar__dot {
+  @apply absolute;
+  @apply left-0;
+  @apply top-0;
+  @apply h-full;
+
+  @apply bg-fg-color-bg;
+}
+
+.progressBar__dot::after {
+  content: "";
+  @apply absolute;
+  @apply -right-2;
+  @apply -top-1;
+  @apply w-3;
+  @apply h-3;
+  @apply rounded-full;
+  @apply z-2;
+  @apply invisible;
+
+  @apply bg-fg-color-bg;
+}
+
+/* end progress bar */

@@ -9,10 +9,12 @@ module.exports = {
     },
     backgroundColor: theme => ({
       ...theme('colors'),
-      'sidebar': 'var(--sidebar-bg)',
+      'sidebar-bg': 'var(--sidebar-bg)',
       'alpha-bg': 'var(--alpha-bg)',
       'layout-bg': 'var(--layout-bg)',
       'topbar-bg': 'var(--topbar-bg)',
+      'player-bg': 'var(--player-bg)',
+      'fg-color-bg': 'var(--fg-color)',
       'loading-bg-animation': 'var(--loading-bg-animation)'
     }),
     borderColor: theme => ({
@@ -26,6 +28,9 @@ module.exports = {
       'secondary': 'var(--text-secondary)',
       'white': 'var(--white)'
     }),
+    lineHeight: {
+      'normal': 'normal !important'
+    },
     zIndex: {
       '0': 0,
       '1': 1,

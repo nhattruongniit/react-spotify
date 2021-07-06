@@ -27,6 +27,18 @@
   @apply text-xl;
 }
 
+.icon--xsmall {
+  @apply w-4;
+  @apply h-4;
+  @apply text-base;
+}
+
+.icon--4xlarge {
+  @apply w-10;
+  @apply h-10;
+  @apply text-4xl;
+}
+
 .ic-library:before {
   content: "\e019";
 }
@@ -85,4 +97,32 @@
 
 .ic-go-left:before {
   content: "\7a";
+}
+
+.ic-volume:before {
+  content: "\e009";
+}
+
+.ic-shuffle:before {
+  content: "\e003";
+}
+
+.ic-pre:before {
+  content: "\56";
+}
+
+.ic-play-circle-outline:before {
+  content: "\5f";
+}
+
+.ic-pause-circle-outline:before {
+  content: "\3f";
+}
+
+.ic-next:before {
+  content: "\4e";
+}
+
+.ic-repeat:before {
+  content: "\59";
 }
