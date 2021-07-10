@@ -36,12 +36,14 @@ function ProgressBar() {
   }
 
   useEffect(() => {
-    document.addEventListener('mousemove', hanldeMouseMove)
-    document.addEventListener('mouseup', hanldeMouseUp)
+    if(progressRef.current) {
+      document.addEventListener('mousemove', hanldeMouseMove)
+      document.addEventListener('mouseup', hanldeMouseUp)
+    }
 
     return () => {
-      document.removeEventListener('mousemove', hanldeMouseMove)
-      document.removeEventListener('mouseup', hanldeMouseUp)
+      progressRef.current && progressRef.current.removeEventListener('mousemove', hanldeMouseMove)
+      progressRef.current && progressRef.current.removeEventListener('mouseup', hanldeMouseUp)
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
