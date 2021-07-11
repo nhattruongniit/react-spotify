@@ -1864,6 +1864,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/howler@^2.2.3":
+  "integrity" "sha512-rzIE56NmGh7t8LdZT/zuBMa9iZvwqVmB65gNhwNLtrGEIHdWkEDp1fVmoM/zctR4UJZFe0uP01AmPuPzOwhecA=="
+  "resolved" "https://registry.npmjs.org/@types/howler/-/howler-2.2.3.tgz"
+  "version" "2.2.3"
+
 "@types/html-minifier-terser@^5.0.0":
   "integrity" "sha512-giAlZwstKbmvMk1OO7WXSj4OZ0keXAcl2TQq4LWHiiPH2ByaH7WeUzng+Qej8UPxxv+8lRTuouo0iaNDBuzIBA=="
   "resolved" "https://registry.npmjs.org/@types/html-minifier-terser/-/html-minifier-terser-5.1.1.tgz"
@@ -5916,6 +5921,11 @@
   "version" "4.0.2"
   dependencies:
     "lru-cache" "^6.0.0"
+
+"howler@^2.2.3":
+  "integrity" "sha512-QM0FFkw0LRX1PR8pNzJVAY25JhIWvbKMBFM4gqk+QdV+kPXOhleWGCB6AiAF/goGjIHK2e/nIElplvjQwhr0jg=="
+  "resolved" "https://registry.npmjs.org/howler/-/howler-2.2.3.tgz"
+  "version" "2.2.3"
 
 "hpack.js@^2.1.6":
   "integrity" "sha1-h3dMCUnlE/QuhFdbPEVoH63ioLI="

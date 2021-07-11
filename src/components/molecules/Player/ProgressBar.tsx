@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import  { useState, useRef, useEffect, useCallback } from 'react';
 
 function ProgressBar() {
   // States
@@ -22,11 +22,10 @@ function ProgressBar() {
     if(!progressRef.current) return;
     if(isBusyRef.current) {
       const offsetWidth = progressRef.current.offsetWidth;
-      let cal = event.clientX - progressRef.current.offsetLeft;
-      if(cal < 0) cal = 0;
-      if(cal > offsetWidth) cal = offsetWidth;
-
-      const newValue = (cal / offsetWidth) * 100;
+      let remainsValue = event.clientX - progressRef.current.offsetLeft;
+      if(remainsValue < 0) remainsValue = 0;
+      if(remainsValue > offsetWidth) remainsValue = offsetWidth;
+      const newValue = (remainsValue / offsetWidth) * 100;
       setPercent(newValue)
     }
   },[])

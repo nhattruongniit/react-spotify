@@ -103,6 +103,10 @@
   content: "\e009";
 }
 
+.ic-volume-mute:before {
+  content: "\e00a";
+}
+
 .ic-shuffle:before {
   content: "\e003";
 }

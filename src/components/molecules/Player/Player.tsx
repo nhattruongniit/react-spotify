@@ -1,13 +1,34 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import clsx from 'clsx'
+
+// components
 import ProgressBar from './ProgressBar'
 
-import clsx from 'clsx'
+// services
+import playerService from 'services/playerService'
+
+// helpers 
+import durationTime from 'heplers/durationTime'
 
 const Player = () => {
   const [isPlay, seIsPlay] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
   
   function togglePlay() {
     seIsPlay(prevState => !prevState)
+  }
+
+  useEffect(() => {
+    if(!isPlay) {
+      playerService.pause()
+    } else {
+      playerService.play()
+    }
+  }, [isPlay])
+
+  function handleMuteVolume() {
+    playerService.mute(!isMuted)
+    setIsMuted(!isMuted)
   }
 
   return (
@@ -73,11 +94,19 @@ const Player = () => {
         <div className="flex items-center">
           <span className="block text-xs mr-2.5 opacity-50">03:50</span>
           <ProgressBar />
-          <span className="block text-xs ml-2.5">05:15</span>
+          <span className="block text-xs ml-2.5">
+            {durationTime(playerService.duration())}
+          </span>
         </div>
       </div>
       <div className="w-1/5 flex">
-        <i className="icon icon--xsmall leading-normal flex ic-volume mr-3" />
+        <i 
+          className={clsx(
+            "icon icon--xsmall leading-normal flex mr-3 cursor-pointer",
+            isMuted ? 'ic-volume-mute' : 'ic-volume' 
+          )}
+          onClick={handleMuteVolume} 
+        />
         <ProgressBar />
       </div>
     </div>
