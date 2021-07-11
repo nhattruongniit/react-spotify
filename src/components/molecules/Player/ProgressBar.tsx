@@ -42,10 +42,10 @@ function ProgressBar() {
 
     return () => {
       progressRef.current && progressRef.current.removeEventListener('mousemove', hanldeMouseMove)
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       progressRef.current && progressRef.current.removeEventListener('mouseup', hanldeMouseUp)
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [hanldeMouseMove])
 
   return (
     <div
