@@ -1,6 +1,7 @@
 
 // components
-import Player from 'components/molecules/Player'
+import Player from 'components/molecules/Player';
+import Sliders from 'components/molecules/Silders';
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
           <div className="mainpage">
             <div className="mainpage__container">
               <div className="mainpage__content">
+                <Sliders />
                 <div className="channel">
                   <div className="title text-primary mb-2.5">Có Thể Bạn Sẽ Thích Đấy</div>
                   <div className="channel__carousel -mx-3.5">

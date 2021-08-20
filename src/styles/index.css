@@ -273,7 +273,7 @@ a:hover {
 
 /* start sliders */
 .sliders {
-  margin-bottom: 50px;
+  @apply mb-8;
 }
 
 .sliders__container {
@@ -341,8 +341,10 @@ a:hover {
   @apply z-0;
   @apply opacity-0;
   @apply rounded-lg;
+  @apply h-full;
+  @apply w-2/5;
 
-  @apply bg-loading-bg-animation;
+  /* @apply bg-loading-bg-animation; */
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
     z-index 0s linear 0.25s;
 }
@@ -356,6 +358,8 @@ a:hover {
 }
 
 .sliders__item img {
+  @apply w-full;
+
   transition: transform 0.7s;
 }
 

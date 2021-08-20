@@ -32,7 +32,7 @@ const Player = () => {
   }
 
   return (
-    <div className="bg-player-bg fixed w-full bottom-0 left-0 h-24 px-10 flex justify-between items-center">
+    <div className="bg-player-bg fixed z-10 w-full bottom-0 left-0 h-24 px-10 flex justify-between items-center">
       <div className="w-1/5 flex items-center">
         <div 
           className={clsx(

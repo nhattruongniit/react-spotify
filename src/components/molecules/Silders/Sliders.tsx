@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 
 // data
 import sliders from './data.json';
@@ -17,10 +17,10 @@ export default function Sliders() {
     setCurrIndex((prevCurrIndex: number) => (prevCurrIndex + 1) % sliders.length)
   }, []);
 
-  useEffect(() => {
-    const timeout = setTimeout(handleNextSlide, 3000)
-    return () => clearTimeout(timeout)
-  })
+  // useEffect(() => {
+  //   const timeout = setTimeout(handleNextSlide, 3000)
+  //   return () => clearTimeout(timeout)
+  // })
 
   return (
     <div className="sliders">
