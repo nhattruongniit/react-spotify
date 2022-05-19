@@ -79,7 +79,7 @@ function App() {
           <div className="mainpage">
             <div className="mainpage__container">
               <div className="mainpage__content">
-                {/* <Sliders /> */}
+                <Sliders />
                 <div className="channel">
                   <div className="title text-primary mb-2.5">
                     Có Thể Bạn Sẽ Thích Đấy
