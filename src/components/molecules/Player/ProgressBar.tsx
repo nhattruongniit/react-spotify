@@ -9,6 +9,7 @@ function ProgressBar() {
 
   console.log("no squash commit");
   console.log("squash commit");
+  console.log("top squash commit");
 
   function handleVolume(event: {
     type: string;
