@@ -21,10 +21,6 @@ function SliderItem({ slide, currIndex, index, total }: IProps) {
     prev = 4;
   }
 
-  console.log("no squash commit");
-  console.log("squash commit");
-  console.log("top squash commit");
-
   return (
     <React.Fragment>
       <div
