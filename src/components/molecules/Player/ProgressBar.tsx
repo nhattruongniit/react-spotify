@@ -7,10 +7,6 @@ function ProgressBar() {
   const progressRef = useRef<HTMLDivElement>(null);
   const isBusyRef = useRef(false);
 
-  console.log("no squash commit");
-  console.log("squash commit");
-  console.log("top squash commit");
-
   function handleVolume(event: {
     type: string;
     nativeEvent: { offsetX: number };

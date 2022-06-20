@@ -8,10 +8,6 @@ type IProps = {
 const Portal: FC<IProps> = ({ children, selector = "div" }) => {
   const [container] = useState(document.createElement(selector));
 
-  console.log("no squash commit");
-  console.log("squash commit");
-  console.log("top squash commit");
-
   useEffect(() => {
     document.body.appendChild(container);
 
