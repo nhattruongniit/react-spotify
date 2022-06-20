@@ -18,6 +18,7 @@ const Player = () => {
 
   console.log("no squash commit");
   console.log("squash commit");
+  console.log("top squash commit");
 
   function togglePlay() {
     seIsPlay((prevState) => !prevState);
