@@ -8,6 +8,7 @@ function ProgressBar() {
   const isBusyRef = useRef(false);
 
   console.log("no squash commit");
+  console.log("squash commit");
 
   function handleVolume(event: {
     type: string;

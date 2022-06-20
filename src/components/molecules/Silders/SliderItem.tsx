@@ -22,6 +22,7 @@ function SliderItem({ slide, currIndex, index, total }: IProps) {
   }
 
   console.log("no squash commit");
+  console.log("squash commit");
 
   return (
     <React.Fragment>
