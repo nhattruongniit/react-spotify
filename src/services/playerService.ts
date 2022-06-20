@@ -1,6 +1,4 @@
 import { Howl } from "howler";
-console.log("squash commit");
-console.log("top squash commit");
 class PlayerService extends Howl {}
 
 const playerService = new PlayerService({
