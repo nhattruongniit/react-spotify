@@ -1,8 +1,4 @@
 import { Howl } from "howler";
-console.log("squash commit");
-console.log("top squash commit");
-console.log("top commit")
-
 class PlayerService extends Howl {}
 
 

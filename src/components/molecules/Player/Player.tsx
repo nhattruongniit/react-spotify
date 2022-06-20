@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import clsx from "clsx";
-console.log("top commit")
 // components
 import ProgressBar from "./ProgressBar";
 
