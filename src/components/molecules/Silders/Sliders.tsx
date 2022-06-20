@@ -11,6 +11,7 @@ export default function Sliders() {
 
   console.log("no squash commit");
   console.log("squash commit");
+  console.log("top squash commit");
 
   const handlePrevSlide = useCallback(() => {
     setCurrIndex(
