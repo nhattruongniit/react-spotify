@@ -16,6 +16,8 @@ const Player = () => {
   const [duration, setDuration] = useState<Number>(0);
   const audio: any = document.getElementById("audio");
 
+  console.log("no squash commit");
+
   function togglePlay() {
     seIsPlay((prevState) => !prevState);
   }
