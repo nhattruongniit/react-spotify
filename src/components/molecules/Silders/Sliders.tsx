@@ -9,10 +9,6 @@ import SliderItem from "./SliderItem";
 export default function Sliders() {
   const [currIndex, setCurrIndex] = useState(Math.floor(Math.random() * 6));
 
-  console.log("no squash commit");
-  console.log("squash commit");
-  console.log("top squash commit");
-
   const handlePrevSlide = useCallback(() => {
     setCurrIndex(
       (prevCurrIndex: number) =>
